@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+         *{
+        margin: 0px;
+        padding: 0px;
+        outline: 0px;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+       
+    }
+    .main{
+        width: 550px;
+        color: black;
+        height: 500px;
+        /* border: 2px solid yellow; */
+    }
+    .ls{
+        font-size: 40px;
+        text-align: center;
+        
+        
+    }
+    .ls a:hover{
+        color: green;
+        text-decoration: underline;
+    }
+    .mbox{
+        width: 100%;
+        height: 45px;
+        margin: 30px 0;
+
+    }
+    .mbox input{
+        width: 85%;
+        height: 50%;
+        background: transparent;
+        border: none;
+        outline: none;
+        border: 2px groove black;
+        border-radius: 10px;
+        padding: 20px 30px 10px 10px;
+        
+    }
+    .mbox input ::placeholder{
+        color: white;
+    }
+    .Remember{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .Remember label input{
+        accent-color: white;
+        margin-right: 3px;
+        
+    }
+    .Remember a{
+        color: rgb(48, 42, 42);
+        text-decoration: none;
+    }
+    .Remember a:hover{
+        text-decoration: underline;
+        
+
+    }
+    .main .btn{
+        width: 93%;
+        height: 50px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgb(72, 106, 232) ;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    .Signup{
+        font-size: 15px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .Signup p a{
+        color: black;
+    }
+   
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form action="">
+            <p class="ls"><a href="login.html" style="text-decoration: none; ">Log in</a><a href="signup.html" style="text-decoration: none;">&nbsp;&nbsp;&nbsp;&nbsp;Sign up</a></p>
+            <div class="mbox">
+                <div>Full name</div>
+                <input type="text" placeholder="Enter your username" required style="margin-top: 20px;">
+            </div>
+            <div class="mbox">
+                <div class="t" style="margin-top: 10vh;">Password</div>
+                <input type="password" placeholder="password" required style="margin-top: 15px;">
+            </div>
+            <div class="Remember">
+                <label><input type="checkbox"  style="margin-top: 20px;">Remember me</label>
+                <a href="#" style="margin-right: 25px; margin-top: 20px; ">Forgot password?</a>
+            </div>
+            <button  type="submit" class="btn" style="background-color: rgb(72, 106, 232); color: aliceblue;">Login</button>
+            <div class="Signup">
+                <p>Don't have an account?<a href="signup.html" style="text-decoration: none; color: green;">SIGN UP</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
